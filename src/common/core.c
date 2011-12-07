@@ -185,18 +185,18 @@ static void display_title(void)
 {
 	//ClearScreen(); // clear screen and go up/left (0, 0 position in text)
 	ShowMessage(""CL_WTBL"           (=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)"CL_CLL""CL_NORMAL"\n");
-	ShowMessage(""CL_XXBL"           ("CL_BOLD"  _           ___  _   _			   "CL_XXBL""CL_CLL")"CL_NORMAL"\n");
-	ShowMessage(""CL_XXBL"           ("CL_BOLD" | |         / _ \\| | | |	  		   "CL_XXBL""CL_CLL")"CL_NORMAL"\n");
-	ShowMessage(""CL_XXBL"           ("CL_BOLD" | |__  _ __/ /_\\ \\ |_| |__   ___ _ __   __ _  "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
-	ShowMessage(""CL_XXBL"           ("CL_BOLD" | '_ \\| '__|  _  | __| '_ \\ / _ \\ '_ \\ / _` | "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
-	ShowMessage(""CL_XXBL"           ("CL_BOLD" | |_) | |  | | | | |_| | | |  __/ | | | (_| | "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
-	ShowMessage(""CL_XXBL"           ("CL_BOLD" |_.__/|_|  \\_| |_/\\__|_| |_|\\___|_| |_|\\__,_| "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
+	ShowMessage(""CL_XXBL"           ("CL_BOLD"              _ _ 					 "CL_XXBL""CL_CLL")"CL_NORMAL"\n");
+	ShowMessage(""CL_XXBL"           ("CL_BOLD"     /\      | | |                      "CL_XXBL""CL_CLL")"CL_NORMAL"\n");
+	ShowMessage(""CL_XXBL"           ("CL_BOLD"    /  \   __| | |__   __ _ _ __ __ _   "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
+	ShowMessage(""CL_XXBL"           ("CL_BOLD"   / /\ \ / _` | '_ \ / _` | '__/ _` | "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
+	ShowMessage(""CL_XXBL"           ("CL_BOLD"  / ____ \ (_| | | | | (_| | | | (_| | "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
+	ShowMessage(""CL_XXBL"           ("CL_BOLD" /_/    \_\__,_|_| |_|\__,_|_|  \__,_| "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
     if(!ATHENA_RELEASE_FLAG && !ATHENA_OFFICIAL_FLAG) ShowMessage(""CL_XXBL"           "CL_BOLD"                v.%d.%d.%d"CL_XXBL""CL_CLL""CL_NORMAL"\n", ATHENA_MAJOR_VERSION, ATHENA_MINOR_VERSION, ATHENA_REVISION);
 	ShowMessage(""CL_XXBL"           ("CL_BOLD"                                               "CL_XXBL""CL_CLL")"CL_NORMAL"\n");
-	ShowMessage(""CL_XXBL"           ("CL_BT_GREEN"       Projeto brAthena (c) 2008 - 2011        "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
+	ShowMessage(""CL_XXBL"           ("CL_BT_GREEN"      Projeto Adhara (c) 2011 (baseado no brAthena)        "CL_XXBL")"CL_CLL""CL_NORMAL"\n");
 	ShowMessage(""CL_WTBL"           (=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)"CL_CLL""CL_NORMAL"\n\n");
 
-	ShowInfo("Revisao do SVN: '"CL_WHITE"%s"CL_RESET"'.\n", get_svn_revision());
+	ShowInfo("Revisao GIT: '"CL_WHITE"%s"CL_RESET"'.\n", get_svn_revision());
 }
 
 // Warning if logged in as superuser (root)
@@ -204,8 +204,8 @@ void usercheck(void)
 {
 #ifndef _WIN32
     if ((getuid() == 0) && (getgid() == 0)) {
-	ShowWarning ("Voce esta executando o brAthena como root superuser.\n");
-	ShowWarning ("E desnecessario e inseguro executar o brAthena com privilegios root.\n");
+	ShowWarning ("Voce esta executando o Adhara como root superuser.\n");
+	ShowWarning ("EVITE executar o Adhara com privilegios root.\n");
 	sleep(3);
     }
 #endif

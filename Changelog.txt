@@ -1,14 +1,17 @@
 // Estrutura para o Changelog.
 //
 //	r0000 - Dia/Mês/Ano [Autor(es)]
-//	* Notação
-//	- Comentário (opcional)
+//	- Notação
+//	* Comentário (opcional)
+
+	r0001 - 07/12/2011 [Anubis]
+	- Inicio da edição dos arquivos de nucleo do Adhara-Project.
+	* Alterado o brathena-admin para adhara admin e opção para o Archlinux e derivados.
 	
 	r0001 - 05/12/2011 [Anubis]
-	- Iniciado a Release inicial do Adhara project, baseado no brAthena r0946
+	- Iniciado a Release inicial do Adhara project, baseado no brAthena r0946.
 
 	
-
 
 
 
